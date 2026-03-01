@@ -42,3 +42,10 @@ INSERT INTO productos (nombre, tipo, marca, descripcion, precio, stock, imagen) 
 ('Casco Forestal Husqvarna Technical XR', 'accesorio', 'Husqvarna', 'Casco técnico con protección para tala intensiva', 99.90, 15, 'casco_husqvarna_technical_xr.jpg'),
 ('Kit Limpieza Motosierra Stihl Premium', 'accesorio', 'Stihl', 'Kit de limpieza y mantenimiento para motosierra', 39.00, 30, 'kit_limpieza_motosierra_stihl_premium.jpg');
 
+INSERT INTO productos (nombre, tipo, marca, descripcion, precio, stock, imagen) VALUES
+('Taladro Bosch GSB 13 RE', 'taladro', 'Bosch', 'Taladro percutor compacto ideal para trabajos domésticos y profesionales ligeros', 89.99, 25, 'taladro_bosch_gsb13re.jpg'),
+('Desbrozadora Husqvarna 128R', 'desbrozadora', 'Husqvarna', 'Desbrozadora versátil para mantenimiento de jardines y áreas verdes', 249.50, 8, 'desbrozadora_husqvarna_128r.jpg'),
+('Generador Honda EU22i', 'generador', 'Honda', 'Generador portátil silencioso ideal para uso doméstico y camping', 1199.00, 5, 'generador_honda_eu22i.jpg'),
+('Hidrolavadora Kärcher K5', 'hidrolavadora', 'Kärcher', 'Hidrolavadora de alta presión para limpieza de vehículos y exteriores', 399.99, 10, 'hidrolavadora_kaercher_k5.jpg'),
+('Compresor Stanley DN200/10/5', 'compresor', 'Stanley', 'Compresor de aire portátil para inflado y herramientas neumáticas ligeras', 149.90, 15, 'compresor_stanley_dn200105.jpg');
+

@@ -19,10 +19,10 @@
       type="text"
       v-model="terminoBusqueda"
       placeholder="Busca con sentido, ok?"
-      @keyup.enter="accionBuscar"
+      @keyup.enter="accionEncontrar"
       class="search-input"
     />
-    <button @click="accionBuscar">Buscar</button>
+    <button @click="accionEncontrar">Buscar</button>
 
     <!-- ===============================
          FILTROS AVANZADOS
@@ -173,7 +173,7 @@ const cargarProductos = async () => {
    - Llama a /api/productos/buscar?termino=...
    - Se ejecuta al pulsar ENTER o el botón Buscar
    ============================================================ */
-const accionBuscar = async () => {
+const accionEncontrar = async () => {
   paginaActual.value = 1
 
   // Si no hay texto, recargamos el catálogo normal
@@ -238,7 +238,7 @@ cargarProductos()
   background: lightgray;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 5px rgba(105, 105, 105, 0.1);
 }
 
 .card img {
@@ -255,13 +255,15 @@ cargarProductos()
 }
 
 .paginacion button {
+  background-color: cadetblue;
+  color: black;
   margin: 0 4px;
   padding: 0.5rem 0.8rem;
 }
 
 button.activo {
   background-color: green;
-  color: white;
+  color: rgb(145, 145, 145);
   font-weight: bold;
 }
 </style>
